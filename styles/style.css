@@ -106,17 +106,14 @@ body {
   border-radius: 5px;
   margin-top: 23px;
   margin-bottom: 23px;
-}
-.nav-button a {
-  text-decoration: none;
   font-size: 20px;
-  font-weight: 600;
-  color: #000;
+  font-weight: 700;
+}
+.flofing-nav-manu a {
+  text-decoration: none;
 }
 #recent {
   background-color: red;
-}
-#recent a {
   color: #fff;
 }
 .blogs {
@@ -138,6 +135,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.upcoming-match-thumbnail {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
 .blog-info a {
   text-decoration: none;
   margin: 10px;
@@ -149,6 +151,17 @@ body {
 .blog-info .blog-title {
   margin: 10px;
 }
+.blog-info .upcoming-match-title {
+  font-size: 29px;
+  text-align: center;
+}
+.blog-info .upcoming-match-time {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
 .tome-and-comment {
   width: 50%;
   margin-left: 10px;
