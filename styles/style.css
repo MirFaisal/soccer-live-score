@@ -506,12 +506,12 @@ p {
     text-overflow: ellipsis;
   }
   .blogs-container {
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
   }
   .blog {
-    width: 240px;
+    width: 220px;
   }
   .nav-button {
     width: 120px;
@@ -529,7 +529,7 @@ p {
     grid-gap: 10px;
   }
   .thumbnail img {
-    width: 240px;
+    width: 220px;
   }
 }
 /*--------------------------------
