@@ -303,9 +303,9 @@ p {
     border: 2px solid rgba(120, 120, 120, 0.374);
   }
   .blogs {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     grid-gap: 40px;
     width: 100%;
