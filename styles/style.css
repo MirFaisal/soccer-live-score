@@ -286,7 +286,7 @@ p {
   .blogs-container {
     display: flex;
     flex-direction: column;
-    align-item: center;
+    align-items: center;
     justify-content: center;
   }
   .nav-manu-container {
