@@ -306,8 +306,9 @@ p {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+    align-items: center;
     grid-gap: 40px;
-    width: 80%;
+    width: 100%;
   }
   .footer {
     min-height: 400px;
