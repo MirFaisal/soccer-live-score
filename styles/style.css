@@ -49,18 +49,27 @@ body {
 /*--------------------------------
          button style        
 ---------------------------------- */
-.watch-live-button {
+.watch-live-button, .view-more-button {
   border: 0;
   width: 200px;
   height: 70px;
   background-color: red;
   border-radius: 5px;
 }
-.watch-live-button a {
+.watch-live-button a, .view-more-button a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   font-size: 25px;
+}
+.view-more{
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
+
+}
+.view-more-button{
+    display: none;
 }
 /*--------------------------------
          Button hover        
@@ -330,7 +339,7 @@ p {
   }
   .footer-link {
     display: flex;
-    height: 60%;
+    height: 50%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -341,6 +350,10 @@ p {
     align-items: center;
     width: 20%;
     margin: auto;
+  }
+  .social-link{
+    margin-top: 20px;
+    
   }
   .footer-link {
     display: flex;
@@ -446,6 +459,12 @@ p {
     display: flex;
     flex-wrap: wrap;
   }
+  .last-blog{
+    display: none;
+  }
+  .view-more-button{
+    display: block;
+  }
 }
 /*--------------------------------
     media uary for desktop screen
@@ -512,6 +531,9 @@ p {
     width: 240px;
   }
 }
+/*--------------------------------
+    media uary for big screen desktop screen
+---------------------------------- */
 @media (min-width: 1200px) and (max-width: 1800px) {
   .blogs-container {
     width: 90%;
