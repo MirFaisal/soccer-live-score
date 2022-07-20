@@ -220,7 +220,111 @@ p {
 .footer-section {
   margin-top: 100px;
 }
-
 /*--------------------------------
          footer style end       
 ---------------------------------- */
+/*--------------------------------
+         media uary for mobie screen
+---------------------------------- */
+@media (max-width: 688px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+  }
+  .artical {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .artical-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  .artical-story {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    height: 10px;
+    width: 80%;
+    padding-top: 10px;
+    line-height: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .watch-live-button {
+    border: 0;
+    width: 150px;
+    height: 50px;
+  }
+  .watch-live-button a {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .banner-showcase {
+    margin-top: 20px;
+  }
+  .banner-section {
+    margin-bottom: 20px;
+  }
+  .blogs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-manu-container {
+    height: 350px;
+    width: 330px;
+    background-color: rgb(255, 255, 255);
+  }
+  .nav-button {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 23px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid rgba(120, 120, 120, 0.374);
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 40px;
+    width: 80%;
+  }
+  .footer {
+    min-height: 400px;
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+  }
+  .footer-title {
+    height: 30%;
+    width: 95%;
+    margin: auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .footer-link {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
