@@ -102,7 +102,7 @@ body {
   border: 0;
   width: 250px;
   height: 70px;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   margin-top: 23px;
   margin-bottom: 23px;
@@ -151,14 +151,13 @@ body {
 .blog-info .blog-title {
   margin: 10px;
 }
-.blog-info .upcoming-match-title {
-  font-size: 29px;
+.upcoming-match-title {
+  font-size: 20px;
   text-align: center;
 }
-.blog-info .upcoming-match-time {
-  display: block;
+.upcoming-match-time {
   width: 100%;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -171,8 +170,8 @@ body {
 }
 .time {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 50%;
 }
 .comment {
   display: flex;
@@ -220,13 +219,25 @@ p {
 .footer-section {
   margin-top: 100px;
 }
+.social-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  margin: auto;
+}
 /*--------------------------------
          footer style end       
 ---------------------------------- */
 /*--------------------------------
          media uary for mobie screen
 ---------------------------------- */
-@media (max-width: 688px) {
+@media (max-width: 599px) {
   .container {
     width: 90%;
     margin: auto;
@@ -256,20 +267,16 @@ p {
   }
   .artical-story {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     height: 10px;
     width: 80%;
-    padding-top: 10px;
-    line-height: 20px;
-    padding-bottom: 50px;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
   .watch-live-button {
-    border: 0;
     width: 150px;
     height: 50px;
   }
@@ -295,7 +302,7 @@ p {
     background-color: rgb(255, 255, 255);
   }
   .nav-button {
-    background-color: whitesmoke;
+    background-color: whitesmokergb(255, 255, 255);
     border-radius: 10px;
     margin-top: 23px;
     font-size: 25px;
@@ -307,7 +314,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-gap: 40px;
     width: 100%;
   }
   .footer {
@@ -324,9 +330,231 @@ p {
   }
   .footer-link {
     display: flex;
-    height: 70%;
+    height: 60%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+  .social-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin: auto;
+  }
+  .footer-link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/*--------------------------------
+         media uary for tablet screen
+---------------------------------- */
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    width: 90%;
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    padding-top: 30px;
+    margin-top: 50px;
+  }
+  .banner-showcase {
+    width: 50%;
+  }
+  .banner-showcase img {
+    width: 100%;
+  }
+  .artical {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .artical-title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .artical-story {
+    width: 200px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .blogs-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-manu-container {
+    margin-right: 0;
+    height: 100px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+  }
+  .flofing-nav-manu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-column-gap: 20px;
+  }
+  .nav-button {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid rgba(120, 120, 120, 0.374);
+  }
+  .banner-section {
+    margin-bottom: 50px;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .blog {
+    width: 290px;
+    min-height: 300px;
+    border: 1px solid rgba(120, 120, 120, 0.374);
+    border-radius: 10px;
+    padding: 0;
+  }
+  .thumbnail img {
+    width: 290px;
+  }
+  .social-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin: auto;
+  }
+  .footer-link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/*--------------------------------
+    media uary for desktop screen
+---------------------------------- */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    padding-top: 30px;
+    margin-top: 50px;
+  }
+  .banner-showcase {
+    width: 50%;
+  }
+  .banner-showcase img {
+    width: 100%;
+  }
+  .artical {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .artical-title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .artical-story {
+    width: 200px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .blogs-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog {
+    width: 240px;
+  }
+  .nav-button {
+    width: 120px;
+    height: 60px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .nav-manu-container {
+    margin-right: 0;
+    height: 70%;
+    width: 200px;
+  }
+  .blogs {
+    grid-gap: 10px;
+  }
+  .thumbnail img {
+    width: 240px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .blogs-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .artical {
+    width: 50%;
+    padding-left: 50px;
+  }
+  .artical-title {
+    color: #fff;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .artical-story {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .banner-showcase {
+    width: 50%;
+  }
+  .banner-showcase img {
+    width: 100%;
+  }
+  .nav-button {
+    border: 0;
+    width: 200px;
+  }
+  .blog {
+    width: 240px;
+  }
+  .blogs {
+    grid-gap: 10px;
+  }
+  .thumbnail img {
+    width: 240px;
+  }
+  .blog-info .blog-title {
+    margin: 10px;
   }
 }
